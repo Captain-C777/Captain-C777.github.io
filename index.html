@@ -3,82 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aerochild</title>
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: radial-gradient(ellipse at bottom, #0d1a2d 0%, #000000 100%);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #ffffff;
-      overflow: hidden;
-      position: relative;
-      padding: 20px;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 4rem;
-      text-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
-      animation: pulse 2s infinite;
-      letter-spacing: 2px;
-      z-index: 2;
-    }
-
-    @keyframes pulse {
-      0% { transform: scale(1); opacity: 1; }
-      50% { transform: scale(1.05); opacity: 0.9; }
-      100% { transform: scale(1); opacity: 1; }
-    }
-
-    .star {
-      position: absolute;
-      background: white;
-      border-radius: 50%;
-      opacity: 0.8;
-      animation: twinkle linear infinite;
-    }
-
-    @keyframes twinkle {
-      0% { transform: translateY(0) scale(1); opacity: 0.8; }
-      50% { transform: translateY(-20px) scale(1.2); opacity: 1; }
-      100% { transform: translateY(0) scale(1); opacity: 0.8; }
-    }
-
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 2.5rem;
-      }
-    }
-
-    @media (max-width: 480px) {
-      h1 {
-        font-size: 2rem;
-      }
-    }
-  </style>
+  <title>Coming Soon</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <h1>Coming Soon</h1>
-
-  <!-- Star Elements -->
-  <script>
-    const numStars = 100;
-    for (let i = 0; i < numStars; i++) {
-      const star = document.createElement('div');
-      star.classList.add('star');
-      const size = Math.random() * 2 + 1;
-      star.style.width = `${size}px`;
-      star.style.height = `${size}px`;
-      star.style.top = `${Math.random() * 100}%`;
-      star.style.left = `${Math.random() * 100}%`;
-      star.style.animationDuration = `${2 + Math.random() * 3}s`;
-      star.style.animationDelay = `${Math.random() * 5}s`;
-      document.body.appendChild(star);
-    }
-  </script>
+  <script src="stars.js"></script>
 </body>
 </html>
