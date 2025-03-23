@@ -15,7 +15,7 @@ function typeQuote() {
   if (charIndex < current.length) {
     quoteEl.innerHTML += current.charAt(charIndex);
     charIndex++;
-    setTimeout(typeQuote, 120); // slower typing speed
+    setTimeout(typeQuote, 1000); // slower typing speed
   } else {
     setTimeout(() => {
       quoteEl.innerHTML = "";
