@@ -70,7 +70,7 @@ h1 {
 }
 
 .logo {
-  width: 100px;
+  width: 180px; /* was 100px */
   animation: float 3s ease-in-out infinite;
   margin-bottom: 20px;
 }
