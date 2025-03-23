@@ -15,14 +15,14 @@ function typeQuote() {
   if (charIndex < current.length) {
     quoteEl.innerHTML += current.charAt(charIndex);
     charIndex++;
-    setTimeout(typeQuote, 50);
+    setTimeout(typeQuote, 75); // slower typing speed
   } else {
     setTimeout(() => {
       quoteEl.innerHTML = "";
       charIndex = 0;
       quoteIndex++;
       typeQuote();
-    }, 3000);
+    }, 5000); // longer pause between quotes
   }
 }
 
